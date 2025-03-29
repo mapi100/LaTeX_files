@@ -1,0 +1,173 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} % For mathematical formatting
+\DeclareMathOperator*{\lcm}{lcm}
+\usepackage{amsthm} % For theorem environments
+\usepackage{amssymb} % For \blacksquare
+\usepackage{xparse}
+\usepackage{tikz} % for squares
+\usepackage{yfonts}
+\usepackage{changepage}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+\title{Theorems and definitions for\\ Number Theory}
+\author{Marco Antonio Peña Ibarra}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{$\bigstar$ Week 2}
+\section*{Number Theory!}
+
+\textbf{Definition:} A \underline{partition} of an integer \(n\) is a non-increasing sequence of positive whole numbers whose sum is \(n\).\\[0.5cm]
+
+    \centerline{\textbf{Examples of partitions}}
+    \begin{adjustwidth}{40pt}{40pt}
+    There are 3 partitions of 3 \\ \(p(3)=3\)
+    \begin{align*}
+        &3\\
+        &2+1\\
+        &1+1+1\\
+    \end{align*}
+    
+    \flushleft{There are 5 paritions of 4 \\ \(p(4)=5\)}
+    \begin{align*}
+        &4\\
+        &3+1\\
+        &2+2\\
+        &2+1+1\\
+        &1+1+1+1
+    \end{align*}
+    \end{adjustwidth}
+
+\flushleft{\textbf{Theorem:}} The Division Algorithm\\
+If \(a,b \in  \mathbb{Z}\) with \(b>0\) then there exist unique integers \(q\) and \(r\) satisfying these two conditions.
+\[a=bq+r\]
+\[0 \leq r <b\]
+
+\flushleft{\textbf{Theorem:}} Greatest Common Divisor\\
+Given \(a,b\), we can say that \(d\) is the greatest common divisor of \(a,b\) and we write \(\gcd(a,b)=d\) if \(d \mid a\) and \(d \mid b\) and \(d\) is the largest number for which this is true.\\[0.5cm]
+    
+    \begin{adjustwidth}{40pt}{40pt}
+    \centerline{\textbf{Examples of gcd}}
+    \begin{align*}
+        \gcd(8,12)&=4\\
+        \gcd(8,11)&=1
+    \end{align*}
+
+    When \(\gcd(a,b)=1\), then \(a\) and \(b\) have no common factors other than 1 and we said they are relatively prime.
+    \end{adjustwidth}
+
+\vspace{0.5cm}
+    \begin{adjustwidth}{40pt}{40pt}
+    \centerline{\textbf{Computation: Euclidean Algorithm}} Euclidean Algorithm\\
+    Find \(\gcd(60,42)\)
+    \begin{align*}
+        60&=(42)(1)+18\\
+        42&=(18)(2)+6\\
+        18&=(6)(3)+0
+    \end{align*}
+    So the \(\gcd(60,42)=6\)
+    \end{adjustwidth}
+\vspace{0.5cm}
+
+    \begin{adjustwidth}{40pt}{40pt}
+    \centerline{\textbf{Examples of lcm}}
+    \begin{align*}
+        \lcm(2,6)&=6\\
+        \lcm(2,7)&=14
+    \end{align*}
+    \(\lcm([n])\) for \([n]=\{1,2,\dots, n\}\)
+    \begin{align*}
+        \lcm([3])&=\lcm(1,\lcm(2,3))\\
+        &=\lcm(1,6)\\
+        &=6\\
+        \lcm([4])&=\lcm(1,\lcm(2,\lcm(3,4)))\\
+        &=\lcm(1,\lcm(2,12))\\
+        &=\lcm(1,12)\\
+        &=12
+    \end{align*}
+    \end{adjustwidth}
+
+\newpage
+\section*{$\bigstar$ Week 3}
+\section*{Primes!}
+
+\flushleft{\textbf{Theorem:}} The Fundamental Theorem of Arithmetic\\
+For each integer \(n >1\), there exists primes
+\[p_1 \leq p_2 \leq p_3 \leq \dots \leq p_r\]
+such that \(n=p_1p_2\dots p_r\), and this factorization is unique.\\
+\textit{Fact:} Every natural number bigger than 1 has a unique factorization into primes.
+
+\vspace{0.5cm}
+\flushleft{\textbf{Definition:}} An r-permutation of a set \(S\) containing \(n\) objects is an order selection of \(r\) elements from \(S\).
+
+    \vspace{0.2cm}
+    \centerline{\textbf{Examples}}
+    \begin{adjustwidth}{40pt}{40pt}
+    Let \(S=\{a,b,c\}\)\\
+    The 2-permutation (\(r=2\)) are \[(a,b),(b,a),(a,c),(c,a),(b,c),(c,b)\]
+    The 3-permutations are \[(a,b,c),(a,c,b),(b,a,c),(b,c,a),(c,b,a),(c,a,b)\]
+    \end{adjustwidth}
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}} If \(nPr\) denotes the number of r-permutations of a set of \(n\) objects, then
+\[nPr=\frac{n!}{(n-r)!}\]
+
+\vspace{0.5cm}
+\flushleft{\textbf{Definition:}} An r-combination of a set \(S\) containing is a subset of \(S\) containing \(r\) elements.
+\[{{n}\choose{r}}=\frac{n!}{(n-r!)r!}\]
+\textit{Note:} Also known as the binomial coefficient.
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}} Fermat's Little Theorem (and Wilson's Theorem)\\
+If \(p\) is a prime and \(n\) is a positive integer, then
+\[p \mid n^{p-1}-1\]
+\[(p-1)! \equiv -1 \Mod{p} \]
+
+\newpage
+\section*{$\bigstar$ Week 4}
+\section*{Wilson's Theorem and Congruences}
+
+\flushleft{\textbf{Theorem:}} Fermat's Last Theorem\\
+There does not exist a triple \(a,b,c \in \mathbb{N}\) such that for \(n \geq 2\),
+\[a^n+b^n=c^n \hspace{0.5cm} 
+\text{for } n= \text{odd}\]
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}}
+If \(p\) is a prime, then
+\[p \mid (p-1)!+1\]
+
+\vspace{0.5cm}
+\flushleft{\textbf{Notation:}} We write
+\[a \equiv b \Mod{c}\]
+and say "\(a\) is congruent to \(b\) modulo \(c\)"
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}} A congruence is an equivalence relation\\
+\underline{Tennents of an equivalence relation}
+\begin{enumerate}
+    \item[(1)] reflexivity: \(\hspace{0.5cm} a \equiv a \Mod{c}\)
+    \item[(2)] symmetric: \(\hspace{0.4cm} \text{if } a \equiv b \Mod{c} \text{ then } b \equiv a \Mod{c}\)
+    \item[(3)] transitivity: \(\hspace{0.3cm} \text{if } a \equiv b \Mod{c} \text{ and } b \equiv d \Mod{c} \text{ then } a \equiv d \Mod{c}\) 
+\end{enumerate}
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}} Suppose \(a \equiv a' \Mod{c} \text{ and } b \equiv b' \Mod{c}\).\\
+Then,
+\[a+b \equiv a'+b' \Mod{c}\]
+\[ab \equiv a'b' \Mod{c}\]
+
+\vspace{0.5cm}
+\flushleft{\textbf{Theorem:}} Cancellation Laws\\
+If \(bd \equiv bd' \Mod{c}\) and if \(\gcd(b,c)=1\). Then,
+\[d \equiv d' \Mod{c}\]
+
+\vspace{0.5cm}
+\flushleft{\textbf{Definition:}} Residue Systems [sets of remainders]\\
+If \(h,j \in \mathbb{Z}\) and \(h \equiv j \Mod{m}\), then we say \(j\) is a residue modulo \(m\).
+\end{document}
