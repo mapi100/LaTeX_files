@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage[most]{tcolorbox}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\newcommand{\ihat}{\boldsymbol{\hat{\textbf{\i}}}}
+\newcommand{\jhat}{\boldsymbol{\hat{\textbf{\j}}}}
+
+
+\title{Precalculus Worksheet 10.3}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textit{note: No graphing calculators or electronic devices may be used on this worksheet.}    
+\end{center}
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+What is the standard form of the equation of the parabola with vertex at \((0,0)\) and focus \((-2,0)\)?
+
+\subsection*{Problem 2}
+What is the standard form of the equation of the parabola with vertex at \((0,0)\) and focus \((3,0)\)?
+
+\subsection*{Problem 3}
+Graph the following parabola.
+\[y^2=4x\]
+
+\subsection*{Problem 4}
+Given the parabola below, determine the coordinates \((x,y)\) of the focus and the equation of the directrix.
+\[y=\dfrac{7}{4}x^2\]
+
+\subsection*{Problem 5}
+Find the endpoints of the latus rectum.
+\[y^2=36x\]
+
+\subsection*{Problem 6}
+As the graph of a parabola becomes wider, what will happen to the distance between the focus and directrix?
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+Graph the parabolas and identify the focus and directrix, respectively.
+\begin{enumerate}
+    \item[(a)] \[y^2+2y-12x+61=0\]
+    \item[(b)] \[-2x^2+8x-4y-24=0\]
+\end{enumerate}
+
+\newpage
+\section*{Solutions to the Set 1}
+\subsection*{Problem 1}
+\(y^2=-8x\)
+\subsection*{Problem 2}
+\(y^2=12x\)
+\subsection*{Problem 3}
+For a more detailed graph, sketch \(y^2=4x\) on \href{https://www.desmos.com/calculator}{Desmos} or \href{https://www.geogebra.org/graphing?lang=en}{GeoGebra} to see the solution.
+\subsection*{Problem 4}
+Foci: \((0,\dfrac{1}{7})\), and Directrix: \(y=-\dfrac{1}{7}\)
+\subsection*{Problem 5}
+The endpoints of the latus rectum are \((9, \pm 18)\).
+\subsection*{Problem 6}
+The distance between focus and directrix decreases.
+
+\section*{Solutions to the Set 2}
+\subsection*{Problem 1}
+\begin{enumerate}
+    \item[(a)] 
+    \begin{align*}
+    y^2 + 2y - 12x + 61 &= 0 \\
+    y^2 + 2y &= 12x - 61 \\
+    (y^2 + 2y + 1) &= 12x - 61 + 1 \\
+    (y + 1)^2 &= 12x - 60 \\
+    (y + 1)^2 &= 12(x - 5) \\
+    \text{Standard form: } (y - k)^2 &= 4p(x - h) \\
+    \text{Vertex: } (5, -1) \\
+    4p = 12 &\implies p = 3 \\
+    \text{Focus: } (5 + 3, -1) &= (8, -1) \\
+    \text{Directrix: } x &= 5 - 3 = 2
+    \end{align*}
+
+    \item[(b)] 
+    \begin{align*}
+    -2x^2 + 8x - 4y - 24 &= 0 \\
+    -2x^2 + 8x &= 4y + 24 \\
+    -2(x^2 - 4x) &= 4y + 24 \\
+    -2(x^2 - 4x + 4) &= 4y + 24 - 8 \\
+    -2(x - 2)^2 &= 4y + 16 \\
+    (x - 2)^2 &= -2y - 8 \\
+    (x - 2)^2 &= -2(y + 4) \\
+    \text{Standard form: } (x - h)^2 &= 4p(y - k) \\
+    \text{Vertex: } (2, -4) \\
+    4p = -2 &\implies p = -0.5 \\
+    \text{Focus: } (2, -4 - 0.5) &= (2, -4.5) \\
+    \text{Directrix: } y &= -4 + 0.5 = -3.5
+    \end{align*}
+\end{enumerate}
+
+\end{document}

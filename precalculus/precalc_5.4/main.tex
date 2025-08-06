@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath} % For mathematical formatting
+\usepackage{changepage}
+\usepackage[most]{tcolorbox}
+\usepackage{textcomp} % for writing degrees
+\usepackage{tikz} % For drawing the triangle
+
+\title{Precalculus Worksheet 5.4}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textit{note: This worksheet may be used for two sessions, and\\no electronic devices may be used on this worksheet.}
+\end{center}
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+Use cofunctions of complementary angles to find the following angles:
+\begin{align*}
+    \cos(48^{\circ}) &= \sin(\hspace{1.5cm}^{\circ}) \\
+    \csc(15^{\circ}) &= \sec(\hspace{1.5cm}^{\circ}) \\
+    \tan\left(\dfrac{\pi}{5}\right) &= \cot(\hspace{1.5cm})
+\end{align*}
+
+\subsection*{Problem 2}
+In the right triangle \(\triangle ABC\), sides \(a\) and \(b\) are opposites of angles \(\angle A, \angle B\), respectively, and side \(c\) is the hypotenuse. If \(a=5\) and \(b=12\), find the exact values of:
+\[\sin(A), \cot(B)\]
+
+\subsection*{Problem 3}
+In the right triangle \(\triangle ABC\), sides \(a\) and \(b\) are opposite sides of the angles \(\angle A, \angle B\), respectively, and \(c\) is the hypotenuse. If \(\angle A=34^{\circ}\) and \(a=8\), find the lengths of \(b\) and \(c\) up to two decimal places.
+
+\subsection*{Problem 4}
+A ladder leans against a wall, forming a \(70^\circ\) angle with the ground. If the base of the ladder is 3 meters from the wall, find the length of the ladder (to two decimal places).
+
+\subsection*{Problem 5}
+Given the point \((-3, 4)\) on the terminal side of angle \(t\), find the exact values of the following trigonometric functions of \(t\):
+\[\sin(t),\cos(t),\tan(t),\csc(t),\sec(t),\cot(t)\]
+
+\subsection*{Problem 6}
+Simplify the expression using cofunction identities:
+\[
+\sin\left(\dfrac{\pi}{2} - t\right) \cdot \tan(t) + \cos(t)
+\]
+
+
+\subsection*{Problem 7}
+Prove the identity:
+\[
+\dfrac{\cos(t)}{1 - \sin(t)} = \sec(t) + \tan(t)
+\]
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+Prove the following.
+\[
+\sin^2\left(\dfrac{\pi}{2} - t\right) + \cos^2(t) = 2\cos^2(t)
+\]
+
+\subsection*{Problem 2}
+In the right triangle \(\triangle ABC\), suppose sides \(a=3\) and \(c=5\), such that we have \(\sin(A) = \dfrac{3}{5}\). Find the exact value of:
+\[
+\tan\left(\dfrac{\pi}{2} - A\right) + \csc(B)
+\]
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+    % Define the sides
+    \def\a{3}
+    \def\c{5}
+    \pgfmathsetmacro{\b}{sqrt(\c^2 - \a^2)} % Calculate side b = 4 (Pythagoras)
+
+    % Draw the triangle
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (\b,0);
+    \coordinate (C) at (\b,\a);
+
+    \draw[thick] (A) -- node[below] {$b = 4$} (B) -- 
+                 node[right] {$a = 3$} (C) -- 
+                 node[above left] {$c = 5$} (A);
+
+    % Mark the right angle
+    \draw (B) -- ++(-0.3,0) -- ++(0,0.3) -- ++(0.3,0);
+
+    % Label angles
+    \node at (-0.2,0) {$A$};
+    \node at (4,3.25) {$B$};
+    \node at (4.25,0) {\(C\)}
+\end{tikzpicture}
+\end{center}
+
+\newpage
+\section*{Solutions for Set 1}
+\subsection*{Problem 1}
+\begin{align*}
+    \cos(48^{\circ}) &= \sin(42^{\circ}) \\
+    \csc(15^{\circ}) &= \sec(75^{\circ}) \\
+    \tan\left(\dfrac{\pi}{5}\right) &= \cot\left(\dfrac{3\pi}{10}\right)
+\end{align*}
+
+\subsection*{Problem 2}
+\[
+\sin(A) = \dfrac{5}{13}, \quad \cot(B) = \dfrac{5}{12}
+\]
+
+\subsection*{Problem 3}
+\[
+b \approx 11.86, \quad c \approx 14.31
+\]
+
+\subsection*{Problem 4}
+The length of the ladder is approximately \(8.77\) meters.
+
+\subsection*{Problem 5}
+\[
+\sin(t) = \dfrac{4}{5}, \cos(t) = -\dfrac{3}{5}, \tan(t) = -\dfrac{4}{3}, \csc(t) = \dfrac{5}{4}, \sec(t) = -\dfrac{5}{3}, \cot(t) = -\dfrac{3}{4}
+\]
+
+\subsection*{Problem 6}
+\[
+\cos(t) \cdot \dfrac{\sin(t)}{\cos(t)} + \cos(t) = \sin(t) + \cos(t)
+\]
+
+\subsection*{Problem 7}
+Multiply numerator and denominator by \(1 + \sin(t)\):
+\[
+\dfrac{\cos(t)(1 + \sin(t))}{1 - \sin^2(t)} = \dfrac{\cos(t)(1 + \sin(t))}{\cos^2(t)} = \sec(t) + \tan(t)
+\]
+
+\section*{Solutions for Set 2}
+\subsection*{Problem 1}
+Using the cofunction identity \(\sin\left(\dfrac{\pi}{2} - t\right) = \cos(t)\):
+\[
+\sin^2\left(\dfrac{\pi}{2} - t\right) + \cos^2(t) = \cos^2(t) + \cos^2(t) = 2\cos^2(t)
+\]
+
+\subsection*{Problem 2}
+Notice that \(\tan(\pi/2-A)=\cot(A)\). Then, we have
+\[\cot(A)+\csc(B)\]
+since \(\csc(B)=\dfrac{5}{4}\) and \(\cot(A)=\dfrac{4}{3}\), we have
+\[\dfrac{4}{3}+\dfrac{5}{4}=\dfrac{31}{12}\]
+
+\end{document}

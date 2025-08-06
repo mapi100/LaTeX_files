@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath} % For mathematical formatting
+\usepackage{changepage}
+\usepackage[most]{tcolorbox}
+\usepackage{textcomp} % for writing degrees
+\usepackage{tikz} % For drawing the triangle
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\title{Precalculus Worksheet 7.3}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textit{note: No graphing calculators or electronic devices may be used on this worksheet.}    
+\end{center}
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+
+\subsection*{Problem 1}
+Given that \(\tan(\theta)=3\), what is \(\tan(2\theta)\)?
+
+\subsection*{Problem 2}
+For all values of \(\theta\) for which the expression is defined,
+\[\dfrac{\cos(2\theta)}{\tan^2\theta}=?\]
+    \begin{enumerate}
+    \item[(a)] \(2\cot^2\theta - \csc^2\theta\)
+    \item[(b)] \(2\cos\theta - \sec\theta\)
+    \item[(c)] \(2\sin\theta\)
+    \item[(d)] \(\cot\theta - 2\sin\theta\cos\theta\)
+    \item[(e)] \(\cot^2\theta - 2\cos^2\theta\)
+    \end{enumerate}
+    
+\subsection*{Problem 3}
+Use a half-angle formula to find \(\tan\left(\dfrac{7\pi}{12}\right)\).
+
+\subsection*{Problem 4}
+Given that \(\sin(\theta)=\dfrac{17}{19}\), and \(\theta\) is in Quadrant \(II\), what is \(\cos(2\theta)\)?
+
+\subsection*{Problem 5}
+Given that \(\sin(\theta)=-\dfrac{12}{13}\), and \(\theta\) is in Quadrant \(III\), what is \(\sin(2\theta)\)?
+
+\subsection*{Problem 6}
+Use a half-angle formula to find \(\sin(67.5^\circ)\).
+
+\subsection*{Problem 7}
+If \(\cos(\theta)=\dfrac{24}{25}\), and \(\theta\) is in Quadrant \(I\), then what is \(\cos\left(\dfrac{\theta}{2}\right)\)?
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+Explain how to determine the double-angle formula for \(\tan(2x)\) using the double-angle formulas for \(\cos(2x)\) and \(\sin(2x)\).
+
+\subsection*{Problem 2}
+Prove the identities of the following trigonometric functions.
+\begin{enumerate}
+    \item[(a)] \((\sin \alpha-\cos \alpha)^2 = 1 - \sin(2\alpha)\)
+    \item[(b)] \(\sin(2\beta) = -2\sin(-\beta)\cos(-\beta)\)
+    \item[(c)] \(\dfrac{1+\cos(2\theta)}{\sin(2\theta)}\tan^2\theta = \tan \theta\)
+\end{enumerate}
+
+\newpage
+\section*{Solutions for Set 1}
+\subsection*{Problem 1}
+\(\tan(2\theta)=-3/4\)
+\subsection*{Problem 2}
+(e) \(\cot ^2 \theta -2\cos ^2 \theta\)
+\subsection*{Problem 3}
+\(-2-\sqrt{3}\)
+\subsection*{Problem 4}
+\(\cos(2\theta)=-217/361\)
+\subsection*{Problem 5}
+\(\sin(2\theta)=120/169\)
+\subsection*{Problem 6}
+\(\dfrac{\sqrt{2+\sqrt{2}}}{2}\)
+\subsection*{Problem 7}
+\(\cos\Big(\dfrac{\theta}{2}\Big)=\dfrac{7\sqrt{2}}{10}\)
+
+\section*{Solutions for Set 2}
+\subsection*{Problem 1}
+\begin{align*}
+    \tan(2x)&=\dfrac{\sin(2x)}{\cos(2x)}\\
+    &=\dfrac{2\sin x \cos x}{\cos^2x-\sin^2x}\\
+    &=\dfrac{2\tan x}{1-\tan^2x}
+\end{align*}
+
+\subsection*{Problem 2}
+\begin{enumerate}
+    \item[(a)] \begin{align*}
+        (\sin \alpha - \cos \alpha)^2 &= 1 - \sin(2\alpha) \\
+        \sin^2 \alpha - 2\sin \alpha \cos \alpha + \cos^2 \alpha &= \\
+        \sin^2 \alpha + \cos^2 \alpha - 2\sin \alpha \cos \alpha &= \\
+        1 - \sin(2\alpha) &=
+    \end{align*}
+
+    \item[(b)] \begin{align*}
+        \sin(2\beta) &= -2\sin(-\beta)\cos(-\beta) \\
+        &= -2(-\sin \beta)(\cos \beta) \\
+        &= 2\sin \beta \cos \beta \\
+        &= \sin(2\beta)
+    \end{align*}
+
+    \item[(c)] \begin{align*}
+    \dfrac{1+\cos(2\theta)}{\sin(2\theta)}\tan^2\theta &= \dfrac{1 + (\cos^2\theta - \sin^2\theta)}{2\sin\theta\cos\theta} \cdot \dfrac{\sin^2\theta}{\cos^2\theta} \\
+    &= \dfrac{(1 + \cos^2\theta - \sin^2\theta)\sin^2\theta}{2\sin\theta\cos^3\theta} \\
+    &= \dfrac{(2\cos^2\theta)\sin^2\theta}{2\sin\theta\cos^3\theta} \\
+    &= \dfrac{2\cos^2\theta \cdot \sin\theta}{2\cos^3\theta} \\
+    &= \dfrac{\sin\theta}{\cos\theta} = \tan\theta
+\end{align*}
+\end{enumerate}
+
+
+
+
+\end{document}

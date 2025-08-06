@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath} % For mathematical formatting
+\usepackage{changepage}
+\usepackage[most]{tcolorbox}
+\usepackage{textcomp} % for writing degrees
+\usepackage{tikz} % For drawing the triangle
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+
+\title{Precalculus Worksheet 7.2}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textit{note: No graphing calculators or electronic devices may be used on this worksheet.}    
+\end{center}
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+
+\subsection*{Problem 1}
+You are given that \(\cos(A)=-\dfrac{4}{5}\), with \(A\) in Quadrant \(III\), and \(\cos(B)=\dfrac{15}{17}\), with \(B\) in Quadrant \(I\). Find \(\cos(A+B)\).
+
+\subsection*{Problem 2}
+You are given that \(\sin(A)=\dfrac{8}{17}\), with \(A\) in Quadrant \(I\), and \(\sin(B)=\dfrac{12}{13}\), with \(B\) in Quadrant \(II\). Find \(\sin(A+B)\).
+
+\subsection*{Problem 3}
+You are given that \(\tan(A)=\dfrac{11}{3}\) and \(\tan(B)=7\). Find \(\tan(A-B)\).
+
+\subsection*{Problem 4}
+You are given that \(\cos(A)=\dfrac{12}{13}\), with \(A\) in Quadrant \(I\), and \(\cos(B)=\dfrac{5}{13}\), with \(B\) in Quadrant \(I\). Find \(\cos(A-B)\).
+
+\subsection*{Problem 5}
+You are given that \(\cos(A)=-\dfrac{15}{17}\), with \(A\) in Quadrant \(III\), and \(\sin(B)=\dfrac{4}{5}\), with \(B\) in Quadrant \(II\). Find \(\sin(A-B)\).
+
+\subsection*{Problem 6}
+You are given that \(\tan(A)=2\) and \(\tan(B)=9\). Find \(\tan(A+B)\).
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+
+\subsection*{Problem 1}
+Is there only one way to evaluate \(\cos\Big(\dfrac{5\pi}{4}\Big)\)? Explain how to set up the solution in two different ways, and then compute to make sure they give the same answer.
+
+\subsection*{Problem 2}
+For the following trigonometric functions, find the exact value of each expression.
+\begin{align*}
+    &\sin\Big(\arccos(0)-\arccos\Big(\dfrac{1}{2}\Big)\Big)\\
+    &\cos\Big(\arccos\Big(\dfrac{\sqrt{2}}{2}\Big)+\arcsin\Big(\dfrac{\sqrt{3}}{2}\Big)\Big)
+\end{align*}
+
+\subsection*{Problem 3}
+Simplify the following trigonometric function and then graph both expressions as functions to verify the graphs are identical.
+\begin{align*}
+    &\tan\Big(\dfrac{\pi}{4}-x\Big)
+\end{align*}
+
+
+\newpage
+\section*{Solutions for Set 1}
+\subsection*{Problem 1}
+\(-36/85\)
+\subsection*{Problem 2}
+\(140/221\)
+\subsection*{Problem 3}
+\(-1/8\)
+\subsection*{Problem 4}
+\(120/169\)
+\subsection*{Problem 5}
+\(84/85\)
+\subsection*{Problem 6}
+\(-11/17\)
+\section*{Solutions for Set 2}
+\subsection*{Problem 1}
+By the unit circle, because \(5\pi/4\) lies in Quadrant \(III\), its reference angle is \(\pi/4\), and since we know that cosine is negative in Quadrant \(III\), we have
+\[\cos\Big(\dfrac{5\pi}{4}\Big)=-\dfrac{\sqrt{2}}{2}\]
+Also, using a known identity, notice that \(\dfrac{5\pi}{4}=\pi+\dfrac{\pi}{4}\). Hence,
+\begin{align*}
+\cos(\pi+x)&=-\cos(x)\\
+\cos\Big(\dfrac{5\pi}{4}\Big)&=-\cos\Big(\dfrac{\pi}{4}\Big)=-\dfrac{\sqrt{2}}{2}
+\end{align*}
+\subsection*{Problem 2}
+\begin{align*}
+\sin\Big(\arccos(0)-\arccos\Big(\dfrac{1}{2}\Big)\Big)&=\dfrac{1}{2}\\
+\cos\Big(\arccos\Big(\dfrac{\sqrt{2}}{2}\Big)+\arcsin\Big(\dfrac{\sqrt{3}}{2}\Big)\Big)&=-\dfrac{\sqrt{3}-1}{2\sqrt{2}}
+\end{align*}
+
+\subsection*{Problem 3}
+\[\tan\Big(\dfrac{\pi}{4}-x\Big)=\dfrac{1-\tan(x)}{1+\tan(x)}\]
+To see the graph, sketch \(\tan\Big(\dfrac{\pi}{4}-x\Big)=\dfrac{1-\tan(x)}{1+\tan(x)}\) on \href{https://www.desmos.com/calculator}{Desmos} or \href{https://www.geogebra.org/graphing?lang=en}{GeoGebra} to see the solution.
+
+
+
+\end{document}
