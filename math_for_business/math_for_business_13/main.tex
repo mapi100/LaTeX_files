@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Math for Business \& Social Science\\ Worksheet 13}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+A person amortizes a loan of \$170,000 for a new home by obtaining a 20-year mortgage at the rate of 7.5\% compounded monthly.
+
+\begin{enumerate}
+    \item[(a)] Find the monthly payment:
+    \item[(b)] The total interest charges:
+    \item[(c)] The principal remaining after five years:
+\end{enumerate}
+
+\subsection*{Problem 2}
+A University would like to establish a scholarship worth \$15,000 to be awarded to the first-year Business student who attains the highest grade in MATH 1324. The award is to be made annually, and the Vice President Finance believes that, for the foreseeable future, the university will be able to earn at least 2\% a year on investments.\\
+What principal is needed to ensure the viability of the scholarship?
+
+\subsection*{Problem 3}
+A person amortizes a loan of \$230,000 for a new home by obtaining a 30-year mortgage at the rate of 5\% compounded monthly.
+
+\begin{enumerate}
+    \item[(a)] Find the monthly payment:
+\end{enumerate}
+
+\subsection*{Problem 4}
+If an investor has a choice of investing money at 7\% compounded daily or \(7\dfrac{1}{9}\%\) compounded quarterly, which is the better choice?\\
+
+Use: \[
+r_e = \left(1 + \dfrac{r}{n} \right)^n - 1
+\]
+
+\subsection*{Problem 5}
+A person amortizes a loan of \$120,000 over 15 years at 6.25\% compounded monthly.
+\begin{enumerate}
+    \item[(a)] Find the monthly payment.
+    \item[(b)] Find the total interest paid over the life of the loan.
+\end{enumerate}
+
+\subsection*{Problem 6}
+What principal is needed to provide perpetual annual payments of \$8000 if the interest rate is 5.6\% compounded annually?
+
+\subsection*{Problem 7}
+A loan of \$85,000 is to be repaid with monthly payments over 10 years at 5.75\% compounded monthly.
+\begin{enumerate}
+    \item[(a)] Find the monthly payment.
+    \item[(b)] How much total interest will be paid?
+\end{enumerate}
+
+\subsection*{Problem 8}
+Compare the following two investment offers and decide which is better:
+\begin{itemize}
+    \item 6.75\% compounded monthly
+    \item \(6\dfrac{4}{5}\%\) compounded quarterly
+\end{itemize}
+Use: 
+\[
+r_e = \left(1 + \dfrac{r}{n} \right)^n - 1
+\]
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+A company takes a loan of \$500,000 to be amortized over 25 years with monthly payments at 6.2\% compounded monthly.
+
+\begin{enumerate}
+    \item[(a)] Find the monthly payment.
+    \item[(b)] Determine the balance remaining after 15 years.
+    \item[(c)] How much interest has been paid after those 15 years?
+\end{enumerate}
+
+
+\newpage
+\section*{Solutions to the Set 1}
+\subsection*{Problem 1}
+\begin{enumerate}
+    \item[(a)] Find the monthly payment:
+
+    \[
+    R = \dfrac{A}{\dfrac{1 - (1 + r)^{-n}}{r}}
+    \]
+
+    \[
+    A = 170{,}000,\quad r = 0.00625,\quad n = 20 \cdot 12 = 240,\quad \text{so } R = \boxed{1369.51}
+    \]
+
+    \item[(b)] The total interest charges:
+
+    \[
+    240(1369.51) - 170000 = \boxed{158{,}682.40}
+    \]
+
+    \item[(c)] The principal remaining after five years:
+
+    After five years, we are at the beginning of the \( 61^{\text{st}} \) period. So \( n - k + 1 = 240 - 61 + 1 = 180 \), we find that the principal remaining is:
+
+    \[
+    \dfrac{1369.51}{\dfrac{1 - (1 + 0.00625)^{-180}}{0.00625}} \approx \boxed{147{,}733.74}
+    \]
+\end{enumerate}
+\subsection*{Problem 2}
+\[
+A = \dfrac{15{,}000}{0.02} = \boxed{750{,}000}
+\]
+
+\subsection*{Problem 3}
+\[
+R = \dfrac{A}{\dfrac{1 - (1 + r)^{-n}}{r}}
+\]
+
+\( A = 230{,}000 \), \( r = \dfrac{0.05}{12} = 0.004167 \), \( n = 30 \times 12 = 360 \)
+
+\[
+R = \dfrac{230000}{\dfrac{1 - (1 + 0.004167)^{-360}}{0.004167}} \approx \boxed{1{,}234.75}
+\]
+
+\subsection*{Problem 4}
+\textbf{Choice 1: investing money at 7\% compounded daily:}
+\[
+r_e = \left(1 + \dfrac{0.07}{365} \right)^{365} - 1 = 0.0725 = \boxed{7.25\%}
+\]
+
+\textbf{Choice 2: compounded daily or \( 7 \tfrac{1}{9} \)\% compounded quarterly:}
+\[
+r_e = \left(1 + \dfrac{0.07111}{4} \right)^4 - 1 = 0.07303 = \boxed{7.3\%}
+\]
+
+\begin{itemize}
+    \item Since the second choice gives the higher effective rate, it is the better choice.
+\end{itemize}
+
+
+\end{document}

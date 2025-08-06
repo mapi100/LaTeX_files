@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Math for Business \& Social Science\\ Worksheet 12}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\section*{Problem 1}
+Find the present value of an annuity of \$100 per month for \(3 \dfrac{1}{2}\) years at an interest rate of 6\% compounded monthly:
+\[
+A = R \cdot \dfrac{1 - (1 + r)^{-n}}{r}
+\]
+
+\section*{Problem 2}
+If \$10,000 is used to purchase an annuity consisting of equal payments at the end of each year for the next four years and the interest rate is 6\% compounded annually, find the amount of each payment.
+
+\section*{Problem 3}
+If \$20,000 is used to purchase an annuity consisting of equal payments at the end of each year for the next eight years and the interest rate is 6\% compounded annually, find the amount of each payment.
+\[
+R = \dfrac{A}{\dfrac{1 - (1 + r)^{-n}}{r}}
+\]
+
+\section*{Problem 4}
+Find the present value of an annuity of \$200 per month for \(3.5\) years at an interest rate of 6\% compounded monthly.
+\[
+A = R \cdot \dfrac{1 - (1 + r)^{-n}}{r}
+\]
+
+\section*{Problem 5}
+Over a five-year period, an original principal of \$4000 accumulated to \$4950 in an account in which interest was compounded quarterly. Determine the effective rate of interest, rounded to two decimal places.
+\[
+A = P \left(1 + \dfrac{r}{n} \right)^{nt} \quad \text{and} \quad r_e = \left(1 + \dfrac{r}{n} \right)^n - 1
+\]
+
+\subsection*{Problem 6}
+Find the future value of an annuity of \$150 deposited monthly for 5 years at an interest rate of 4.8\% compounded monthly.
+
+\[
+A = R \cdot \dfrac{(1 + r)^n - 1}{r}
+\]
+
+\subsection*{Problem 7}
+If \$8000 is used to purchase an annuity that pays equal yearly amounts for the next 6 years at 5\% interest compounded annually, find the amount of each payment.
+
+\subsection*{Problem 8}
+Find the present value of an annuity of \$250 per month for 4 years at 7.2\% compounded monthly.
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\section*{Problem 1}
+You are planning to retire in 30 years and want to have \$1,000,000 saved by then. You decide to deposit a fixed amount at the end of every month into an account earning 6.5\% interest compounded monthly.
+
+\begin{itemize}
+    \item[(a)] How much should you deposit each month to reach your goal?
+    \item[(b)] If you can only afford \$900 per month, how many years will it take to reach \$1,000,000?
+\end{itemize}
+
+Use:
+\[
+A = R \cdot \dfrac{(1 + r)^n - 1}{r} \quad \text{and solve for \( n \) using logs if needed}
+\]
+
+
+
+\newpage
+\section*{Solutions to the Set 1}
+\subsection*{Problem 1}
+\(R = 100,\quad r = 0.06/12 = 0.005,\quad n = 3.5 \cdot 12 = 42\)
+
+So
+\[
+A = 100 \cdot \frac{1 - (1 + 0.005)^{-42}}{0.005}
+\]
+\[
+A = \boxed{3779.83}
+\]
+\subsection*{Problem 2}
+We are looking to find \( R \)
+
+\[
+R = \frac{A}{\frac{1 - (1 + r)^{-n}}{r}}
+\]
+
+Given: \( A = 10{,}000 \), \( r = 0.06 \), \( n = 4 \)
+
+\[
+R \approx \boxed{2885.91}
+\]
+\subsection*{Problem 3}
+Given: \( A = 20{,}000 \), \( r = 0.06 \), \( n = 8 \)
+
+\[
+R = \frac{20{,}000}{\frac{1 - (1 + 0.06)^{-8}}{0.06}}
+\]
+
+\[
+R \approx \boxed{3220.72}
+\]
+
+\subsection*{Problem 4}
+Given: \( R = 200 \), \( r = \frac{0.06}{12} = 0.005 \), \( n = 3.5 \cdot 12 = 42 \)
+
+\[
+A = 200 \cdot \frac{1 - (1 + 0.005)^{-42}}{0.005}
+\]
+
+\[
+A \approx  \boxed{7559.66}
+\]
+
+\subsection*{Problem 5}
+Find the nominal rate first:
+
+\[
+4950 = 4000 \left(1 + \frac{r}{4}\right)^{4 \cdot 5} = 4000 \left(1 + \frac{r}{4}\right)^{20}
+\]
+
+\[
+1 + \frac{r}{4} = 20\sqrt{\frac{4950}{4000}} \Rightarrow \frac{r}{4} = 0.0107 \Rightarrow r = 4 \cdot 0.0107 \approx \boxed{4.28\%}
+\]
+
+Now find the effective rate:
+
+\[
+r_e = \left(1 + \frac{r}{n} \right)^n - 1 \quad \text{so} \quad r_e = (1.0107)^4 - 1 \approx \boxed{4.35\%}
+\]
+
+\end{document}

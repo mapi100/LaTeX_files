@@ -1,0 +1,262 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Math for Business \& Social Science\\ Exam Review 3}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+Find \( x \), \( y \), \( z \), and \( w \):
+
+\[
+\begin{bmatrix}
+4x & -2y + 1 \\
+z & 5w
+\end{bmatrix}
+=
+\begin{bmatrix}
+-20 & -8 \\
+7 & 30
+\end{bmatrix}
+\]
+
+\subsection*{Problem 2}
+Given the augmented matrix:
+
+\[
+\left[
+\begin{array}{ccc|c}
+1 & 3 & -5 & 5 \\
+4 & 13 & 6 & -6 \\
+-2 & -8 & -6 & 6
+\end{array}
+\right]
+\]
+
+Perform the row operation: 
+\[
+R_3 - 3R_1 \rightarrow R_3
+\]
+
+\subsection*{Problem 3}
+Perform the matrix multiplication \( QR \), where
+
+\[
+Q = 
+\begin{bmatrix}
+4 & 3 & -2
+\end{bmatrix}
+\quad \text{and} \quad
+R = 
+\begin{bmatrix}
+5 & -20 & 16 & 7 & 17 \\
+7 & 18 & -12 & 9 & 12 \\
+6 & 25 & 8 & -5 & 13
+\end{bmatrix}
+\]
+
+\subsection*{Problem 4}
+Let
+\[
+A = \begin{bmatrix}
+-4 & 0 \\
+2 & -1
+\end{bmatrix}
+\quad \text{and} \quad
+B = \begin{bmatrix}
+8 & -3 \\
+1 & 2
+\end{bmatrix}
+\]
+
+Then find:
+\[
+B^{T} - 3A
+\]
+
+\subsection*{Problem 5}
+Solve the following system using the method of reduction:
+\[
+\begin{cases}
+x + 3y = 2 \\
+2x + 7y = 4 \\
+x + 5y + z = 5
+\end{cases}
+\]
+
+\subsection*{Problem 6}
+Solve the system of inequalities by graphing the region they describe:
+\[
+\begin{cases}
+2x + y \leq 10 \\
+x + y \leq 5
+\end{cases}
+\]
+
+\subsection*{Problem 7}
+Solve the following problem. Make sure to show your work and graph the region defined by the system.
+
+\begin{enumerate}[label=(\alph*)]
+    \item Maximize \( Z = 4x - 6y \)
+
+    Subject to:
+    \[
+    \begin{cases}
+    y \leq 7 \\
+    3x - y \leq 3 \\
+    x + y \geq 5 \\
+    x,y \geq 0 \\
+    \end{cases}
+    \]
+\end{enumerate}
+
+\newpage
+\section*{Solutions to the Set 1}
+\subsection*{Problem 1}
+\[
+4x = -20 \Rightarrow x = -5
+\]
+\[
+-2y + 1 = -8 \Rightarrow -2y = -9 \Rightarrow y = \dfrac{9}{2}
+\]
+\[
+z = 7 \quad \text{(from matching entry)}
+\]
+\[
+5w = 30 \Rightarrow w = 6
+\]
+
+\subsection*{Problem 2}
+\[
+R_3 - 3R_1 = R_3
+\]
+\[
+\begin{aligned}
+-2 - 3(1) &= -5 \\
+-8 - 3(3) &= -17 \\
+-6 - 3(-5) &= 9 \\
+6 - 3(5) &= -9
+\end{aligned}
+\]
+\[
+R_3 \text{ becomes } [-5 \quad -17 \quad 9 \mid -9]
+\]
+
+\subsection*{Problem 3}
+\[
+QR = [4 \quad 3 \quad -2] \cdot
+\begin{bmatrix}
+5 & -20 & 16 & 7 & 17 \\
+7 & 18 & -12 & 9 & 12 \\
+6 & 25 & 8 & -5 & 13
+\end{bmatrix}
+= \boxed{[29 \quad -76 \quad 12 \quad 65 \quad 78]}
+\]
+\subsection*{Problem 4}
+\[
+B^T = 
+\begin{bmatrix}
+8 & 1 \\
+-3 & 2
+\end{bmatrix}
+,\quad
+3A = 
+\begin{bmatrix}
+-12 & 0 \\
+6 & -3
+\end{bmatrix}
+\]
+\[
+B^T - 3A = 
+\begin{bmatrix}
+8 & 1 \\
+-3 & 2
+\end{bmatrix}
+-
+\begin{bmatrix}
+-12 & 0 \\
+6 & -3
+\end{bmatrix}
+=
+\begin{bmatrix}
+20 & 1 \\
+-9 & 5
+\end{bmatrix}
+\]
+
+\subsection*{Problem 5}
+\[
+\left[
+\begin{array}{ccc|c}
+1 & 3 & 0 & 2 \\
+2 & 7 & 0 & 4 \\
+1 & 5 & 1 & 5
+\end{array}
+\right]
+\quad \Rightarrow \quad
+\boxed{x = 2,\quad y = 0,\quad z = 3}
+\]
+\subsection*{Problem 6}
+To see the graph, click \href{https://www.desmos.com/calculator/g71beac03r}{here}.
+\subsection*{Problem 7}
+Let us find the feasible corner points:
+
+\begin{itemize}
+    \item Intersection of \( y = 7 \) and \( 3x - y = 3 \):  
+    \[
+    y = 7 \Rightarrow 3x - 7 = 3 \Rightarrow x = \dfrac{10}{3} \quad \Rightarrow \boxed{A = \left(\dfrac{10}{3}, 7\right)}
+    \]
+
+    \item Intersection of \( y = 7 \) and \( x = 0 \):  
+    \[
+    \boxed{B = (0, 7)}
+    \]
+
+    \item Intersection of \( 3x - y = 3 \) and \( x + y = 5 \):  
+    \[
+    \text{Solving: } y = 3x - 3, \quad x + (3x - 3) = 5 \Rightarrow 4x = 8 \Rightarrow x = 2, \quad y = 3 \\
+    \boxed{C = (2, 3)}
+    \]
+
+    \item Intersection of \( x + y = 5 \) and \( x = 0 \):  
+    \[
+    x = 0 \Rightarrow y = 5 \Rightarrow \boxed{E = (0, 5)}
+    \]
+
+    \item \( D = (0, 0) \) is not feasible (violates \( x + y \geq 5 \))
+\end{itemize}
+
+Now evaluate the objective function \( Z = 4x - 6y \) at each feasible point:
+
+\[
+Z(A) = 4\left(\dfrac{10}{3}\right) - 6(7) = \dfrac{40}{3} - 42 = -\dfrac{86}{3} \approx -28.66
+\]
+\[
+Z(B) = 4(0) - 6(7) = -42
+\]
+\[
+Z(C) = 4(2) - 6(3) = 8 - 18 = \boxed{-10}
+\]
+\[
+Z(E) = 4(0) - 6(5) = -30
+\]
+
+\textbf{Since \(-42<-30<-28.66<-10\), the solution is:}  
+\[
+x = 2, \quad y = 3, \quad Z = \boxed{-10}
+\]
+\[\text{said differently, } \hspace{0.3cm} Z(2,3)=-10\]
+
+
+\end{document}

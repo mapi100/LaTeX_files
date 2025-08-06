@@ -1,0 +1,228 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Math for Business \& Social Science\\ Exam Review 2}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+
+\subsection*{Problem 1: Radioactive Decay}
+A radioactive element is such that \( N \) grams remain after \( t \) hours, where
+\[
+N = 12e^{-0.031t}.
+\]
+\begin{enumerate}[label=(\alph*)]
+    \item How many grams are initially present?
+    \item To the nearest tenth of a gram, how many grams remain after 10 hours?
+    \item How many grams remain after 44 hours?
+\end{enumerate}
+
+\subsection*{Problem 2: Supply Equation}
+A manufacturer’s supply equation is 
+\[
+p = \log\left(10 + \dfrac{q}{2}\right),
+\]
+where \( q \) is the number of units supplied at price \( p \) per unit.\\
+At what price will the manufacturer supply 1980 units?
+
+\subsection*{Problem 3: Logarithmic Expressions}
+Rewrite the expression as a single logarithm.
+\begin{enumerate}[label=(\alph*)]
+    \item \( 5\left(2\log x + 3\log y - 2\log z\right) \)
+    \item \( \ln(x - 4) + \ln(3) - 4\ln x \)
+\end{enumerate}
+
+\subsection*{Problem 4: Exponential Equations}
+Solve the following exponential equations, that is, find \( x \).
+\begin{enumerate}[label=(\alph*)]
+    \item \( 81^{4x} = 9 \)
+    \item \( 5(3^x - 7) = 10 \)
+\end{enumerate}
+
+\subsection*{Problem 5: Logarithmic Expressions}
+Find the exact value of the logarithmic expression.
+\begin{enumerate}[label=(\alph*)]
+    \item \( \log_{10} 100 \)
+    \item \( \log_{7}\left( \dfrac{1}{343} \right) \)
+\end{enumerate}
+
+\subsection*{Problem 6: Plant Population Model}
+In a study of rooted plants in a certain geographic region, it was determined that on plots of size \( A \) (in square meters), the average number of species that occurred was \( S \). When \( \log S \) was graphed as a function of \( \log A \), the result was a straight line given by
+\[
+\log S = \log 12.4 + \log A
+\]
+Solve for \( S \).
+
+\subsection*{Problem 7: Compound Interest}
+Suppose \$500 are invested at a nominal rate of 5.5\% compounded semiannually.\\
+Calculate the amount after three years using the formula:
+\[
+S = P(1 + r)^n
+\]
+
+\subsection*{Problem 8: Effective Interest Rate}
+An investor has a choice of investing a sum of money at 8\% compounded annually or at 7.8\% compounded semiannually.\\
+Which is the better of the two rates? Compare the effective rates using the formula:
+\[
+r_e = \left(1 + \dfrac{r}{n} \right)^n - 1
+\]
+
+\subsection*{Problem 9: Present Value with Continuous Compounding}
+A trust fund is being set up by a single payment so that at the end of 30 years there will be \$50{,}000 in the fund.\\
+If interest is compounded continuously at an annual rate of 6\%, how much money should be paid into the fund initially?
+
+Use the formula:
+\[
+P = Se^{-rt}
+\]
+
+\subsection*{Problem 10: Present Value of an Annuity}
+Find the present value of an ordinary annuity if \$2000 are paid per quarter for \( 4.5 \) years at a rate of 8\% compounded quarterly.
+
+Use the formula:
+\[
+A = R \cdot \dfrac{1 - (1 + r)^{-n}}{r}
+\]
+
+\subsection*{Problem 11: Loan Amortization}
+A person is amortizing a 36-month car loan of \$7500 with an interest rate of 4\% compounded monthly. Find the principal remaining after 9 months by computing:
+\[
+R \cdot \dfrac{1 - (1 + r)^{(-n + k - 1)}}{r}
+\]
+
+
+\newpage
+\section*{Solutions to the Set 1}
+
+\subsection*{Problem 1}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \[
+    N = 12e^{-0.031t} = 12e^{-0.031(0)} = \boxed{12 \text{ grams}}
+    \]
+
+    \item 
+    \[
+    t = 10,\quad N = 12e^{-0.031(10)} = 12e^{-0.31} \approx \boxed{8.8 \text{ grams}}
+    \]
+
+    \item 
+    \[
+    t = 44,\quad N = 12e^{-0.031(44)} = 12e^{-1.364} \approx \boxed{3.07 \text{ grams}}
+    \]
+\end{enumerate}
+
+\subsection*{Problem 2}
+\[
+p = \log\left(10 + \dfrac{1980}{2}\right) = \boxed{3}
+\]
+
+\subsection*{Problem 3}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \[
+    5\left(2\log x + 3\log y - 2\log z\right) = 10\log x + 15\log y - 10\log z
+    \]
+    \[
+    = \log x^{10} + \log y^{15} + \log z^{-10}
+    = \log\left(\dfrac{x^{10} y^{15}}{z^{10}}\right)
+    \]
+
+    \item 
+    \[
+    \ln(x - 4) + \ln(3) - 4\ln x 
+    = \ln\left[(x - 4)(3)\right] - \ln(x^4)
+    \]
+    \[
+    = \ln\left(\dfrac{3x - 12}{x^4}\right)
+    \]
+\end{enumerate}
+
+\subsection*{Problem 4}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \[
+    81^{4x} =9 \implies x= \boxed{\dfrac{1}{8}}
+    \]
+
+    \item 
+    \[
+    5(3^x - 7) = 10 \implies x = \boxed{2}
+    \]
+\end{enumerate}
+
+\subsection*{Problem 5}
+\begin{enumerate}[label=(\alph*)]
+    \item 
+    \[
+    \log_{10}(100) = \boxed{2}
+    \]
+
+    \item 
+    \[
+    \log_{7}\left(\dfrac{1}{343}\right) = \log_{7}(7^{-3}) = \boxed{-3}
+    \]
+\end{enumerate}
+
+\subsection*{Problem 6}
+\[
+\ln S = \ln 12.6 + \ln A \Rightarrow \ln S = \ln(12.6A) \Rightarrow S = 12.6A
+\]
+\[
+\text{If } A = 1, \text{ then } S = \boxed{12.6}
+\]
+
+\subsection*{Problem 7}
+\[
+S = 500\left(1 + \dfrac{0.055}{2}\right)^6 \approx \boxed{588.38}
+\]
+
+\subsection*{Problem 8}
+\textbf{Choice 1: 8\% compounded annually}
+\[
+r_e = \left(1 + \dfrac{0.08}{1}\right)^1 - 1 = 0.08 = \boxed{8\%}
+\]
+
+\textbf{Choice 2: 7.8\% compounded quarterly}
+\[
+r_e = \left(1 + \dfrac{0.078}{4}\right)^4 - 1 \approx 0.0803 = \boxed{8.03\%}
+\]
+
+Since the second choice gives the higher effective rate, \textbf{it is the better choice}.
+
+\subsection*{Problem 9}
+\[
+P = Se^{-rt} = 50000 \cdot e^{-0.06 \cdot 30}  \approx \boxed{8264.94}
+\]
+
+\subsection*{Problem 10}
+Data: \( R = 2000 \), \( r = \dfrac{0.08}{4} = 0.02 \), \( n = 4 \cdot 4.5 = 18 \)
+
+\[
+A = 2000 \cdot \dfrac{1 - (1 + 0.02)^{-18}}{0.02} \approx \boxed{29{,}984.06}
+\]
+
+\subsection*{Problem 11}
+Data: \( A = 7500 \), \( n = 36 \), \( r = \dfrac{0.04}{12} \)
+
+\[
+R = \dfrac{7500}{\dfrac{1 - (1 + 0.04/12)^{-36}}{0.04/12}} \approx \boxed{221.43}
+\]
+
+\textbf{The principal remaining after 9 months by computing}
+\[
+P = 221.43 \cdot \dfrac{1 - (1 + 0.04/12)^{-27}}{0.04/12} \approx \boxed{5706.57}
+\]
+
+\end{document}
