@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+
+\title{College Algebra Worksheet 3.4}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textit{note: No graphing calculators or electronic devices may be used on this worksheet.}    
+\end{center}
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+Given the following functions, find and simplify \( (f \cdot g)(x) \).
+\begin{align*}
+    f(x)&=-x+3\\
+    g(x)&=-x-1
+\end{align*}
+
+\subsection*{Problem 2}
+For the functions \( f(x) = 5x - 3 \) and \( g(x) = 3x^2 - 5x \), find \( (f \circ g)(x) \).
+
+\subsection*{Problem 3}
+Given the following table of values, compute \( f(g(4)) \).
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\( x \) & \( f(x) \) & \( g(x) \) \\ \hline
+1 & 13 & 3 \\ \hline
+2 & 12 & 1 \\ \hline
+3 & 5 & 4 \\ \hline
+4 & 8 & 2 \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Problem 4}
+Given the functions below, find the domain of \( (f \circ g)(x) \).
+\[ f(x) = \dfrac{1}{5x + 2} \quad g(x) = \dfrac{1}{-8x - 10} \]
+
+\subsection*{Problem 5}
+Given the functions \( f \) and \( g \) below, find \( g(f(1)) \).
+\begin{align*}
+    f(x) &= x - 4\\
+    g(x) &= -5x - 3
+\end{align*}
+
+\subsection*{Problem 6}
+Given the function \(h(x)\) below, select the answer choice which correctly decomposes \(h(x)\) into component functions \(f(x)\) and \(g(x)\) so that \(h(x)=f(g(x))\).
+
+\subsection*{Problem 7}
+Given the function \( h(x) \) below, decompose \( h(x) \) into component functions \( f(x) \) and \( g(x) \) so that \( h(x) = f(g(x)) \).
+\[ h(x) = (3x - 10)^5 \]
+
+\subsection*{Problem 8}
+Given the functions \(f\) and \(g\) below, find \(f(g(-3))\).
+\begin{align*}
+    f(x)&=-6x-4\\
+    g(x)&=-x-2
+\end{align*}
+
+\subsection*{Problem 9}
+Given the following functions, find and simplify \((f \cdot g)(3) \).
+\begin{align*}
+    f(x)&=3x-2\\
+    g(x)&=-x+2
+\end{align*}
+
+\subsection*{Problem 10}
+Given the following functions, find and simplify \( (f + g)(x) \).
+\[ f(x) = x^2 - 3x - 3 \]
+\[ g(x) = x + 4 \]
+
+\subsection*{Problem 11}
+What is the composition of two functions, \(f \circ g\)?
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+If the order is reversed when composing two functions, can the result ever be the same as the answer in the original order of the composition? If yes, give an example. If no, explain why not.
+
+\subsection*{Problem 2}
+Given \( f(x) = 2x^2 + 4x \) and \( g(x) = \dfrac{1}{x} \), find \( f + g \), \( f - g \), \( fg \), and \( \dfrac{f}{g} \). Simplify your answers as much as you can.
+
+\newpage
+\section*{Solutions for Set 1}
+\subsection*{Problem 1}
+\( x^2 - 2x - 3 \)
+
+\subsection*{Problem 2}
+\( 15x^2 - 25x - 3 \)
+
+\subsection*{Problem 3}
+12
+
+\subsection*{Problem 4}
+All real numbers except \(-\dfrac{5}{4}\) and \(-\dfrac{15}{16}\)
+
+\subsection*{Problem 5}
+\(g(f(1))=12\)
+
+\subsection*{Problem 6}
+\(h(x)=f(g(x))\), where \(f(x)=x^2\) and \(g(x)=3x-5\)
+
+\subsection*{Problem 7}
+\(f(x)=x^5\) and \(g(x)=3x-10\)
+\subsection*{Problem 8}
+\(-10\)
+\subsection*{Problem 9}
+\(-7\)
+\subsection*{Problem 10}
+\(x^2-2x+1\)
+\subsection*{Problem 11}
+Means applying the function \(g\) first, then applying \(f\) to the result, such as
+\[(f \circ g)(x)=f(g(x))\]
+
+\section*{Solutions for Set 2}
+\subsection*{Problem 1}
+The result can be the same when the order of composition is reversed, but not always. It depends on the functions.\\
+An example where the composition is the same in both orders, is when \(f(x)=x+1\), and \(g(x)=x-1\), which gives \((f \circ g)(x)=(g \circ f)(x)=x\).\\
+But in general, function composition is not commutative, so
+\[(f \circ g)(x)\not= (g \circ f)(x)\]
+\subsection*{Problem 2}
+\begin{itemize}
+    \item \( (f + g)(x) = 2x^2 + 4x + \dfrac{1}{x} \)
+    \item \( (f - g)(x) = 2x^2 + 4x - \dfrac{1}{x} \)
+    \item \( (fg)(x) = (2x^2 + 4x)\left(\dfrac{1}{x}\right) = 2x + 4 \)
+    \item \( \left(\dfrac{f}{g}\right)(x) = (2x^2 + 4x)\left(\dfrac{x}{1}\right) = 2x^3 + 4x^2 \)
+\end{itemize}
+
+\end{document}

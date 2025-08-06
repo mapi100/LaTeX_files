@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{College Algebra Worksheet 5.6}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+\subsection*{Problem 1}
+Solve the following rational inequality for \(x\).
+\[\dfrac{x-1}{x^2-6x-7}>0\]
+\begin{enumerate}[label=(\alph*)]
+    \item $(-1, 1) \cup (7, \infty)$
+    \item $(-\infty, -1) \cup (1, 7)$
+    \item $[-1, 1) \cup [7, \infty)$
+    \item $(-\infty, -1) \cup [1, 7)$
+    \item $(-1, 1] \cup [7, \infty)$
+\end{enumerate}
+
+\subsection*{Problem 2}
+Consider the graph of the function \(f(x)=\dfrac{x^2-49}{x^2+4x-21}\). Find the \(x\)-value of the removable discontinuity of the function.
+
+\subsection*{Problem 3}
+What is the slant asymptote of the graph of \(f(x)=\dfrac{10x^2-4}{2x}\)? Give your answer in the form \(y=mx+b\).
+
+\subsection*{Problem 4}
+Consider the graph of the function \(f(x)=\dfrac{x^2-3x-4}{x^2-9x+8}\).\\
+What are the vertical asymptotes?
+
+\subsection*{Problem 5} Consider the graph of the function \(f(x)=\dfrac{x^2+x}{2x^4+2}\). Which is true of this graph and its asymptotes? Select all that apply.
+
+\begin{enumerate}[label=(\alph*)]
+    \item It has a horizontal asymptote at \( y = 0 \).
+    \item It has a horizontal asymptote at \( y = \dfrac{1}{2} \).
+    \item It has no horizontal asymptote.
+    \item It has a slant asymptote at \( y = x \).
+    \item It has a slant asymptote at \( y = 2x \).
+    \item It has no slant asymptote.
+\end{enumerate}
+
+\subsection*{Problem 6}
+Which are intercepts (either \(x\)- or \(y\)-) of the function \(f(x)=\dfrac{(x-6)(x+1)}{(x-1)(x+3)(x+6)}\)?
+
+\subsection*{Problem 7}
+For the following exercises, find the slant asymptote of the functions.
+\begin{enumerate}
+    \item[(a)] \(f(x)=\dfrac{24x^2+6x}{2x+1}\)
+    \item[(b)] \(f(x)=\dfrac{x^2+5x+4}{x-1}\)
+\end{enumerate}
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+For the following function, find the horizontal intercepts, the vertical intercept, the vertical asymptotes, and the horizontal or slant asymptote.
+\[f(x)=\dfrac{3x^2-14x-5}{3x^2+8x-16}\]
+\newpage
+\section*{Solutions to the Set 1}
+\subsection*{Problem 1}
+\begin{enumerate}
+    \item[(a)] \((-1,1) \cup (7,\infty)\) 
+\end{enumerate}
+
+\subsection*{Problem 2}
+The removable discontinuity occurs at \(x=-7\)
+\subsection*{Problem 3}
+\(y=5x\)
+\subsection*{Problem 4}
+\(x=1,8\)
+\subsection*{Problem 5}
+\begin{enumerate}
+    \item[(a)] It has a horizontal asymptote at \(y=0\).
+    \item[(f)] It has no slant asymptote.
+\end{enumerate}
+\subsection*{Problem 6}
+\((-1,0),(6,0),(0,\dfrac{1}{3})\)
+\subsection*{Problem 7}
+\begin{enumerate}
+    \item[(a)] The slant asymptote is \(y = 12x - 3\).
+    \item[(b)] The slant asymptote is \(y = x + 6\).
+\end{enumerate}
+
+\section*{Solutions to the Set 2}
+\subsection*{Problem 1}
+For the function \( f(x) = \dfrac{3x^2 - 14x - 5}{3x^2 + 8x - 16} \), we find:
+
+\begin{enumerate}
+    \item \textbf{Horizontal Intercepts (\(x\)-intercepts)}:
+    \begin{align*}
+        3x^2 - 14x - 5 &= 0 \\
+        x &= \dfrac{14 \pm \sqrt{(-14)^2 - 4(3)(-5)}}{2(3)} \\
+        x &= \dfrac{14 \pm \sqrt{256}}{6} = \dfrac{14 \pm 16}{6} \\
+        x &= 5 \quad \text{or} \quad x = -\dfrac{1}{3}
+    \end{align*}
+
+    \item \textbf{Vertical Intercept (\(y\)-intercept)}:
+    \[ f(0) = \dfrac{-5}{-16} = \dfrac{5}{16} \]
+
+    \item \textbf{Vertical Asymptotes}:
+    \begin{align*}
+        3x^2 + 8x - 16 &= 0 \\
+        x &= \dfrac{-8 \pm \sqrt{64 - 4(3)(-16)}}{6} \\
+        x &= \dfrac{-8 \pm \sqrt{256}}{6} = \dfrac{-8 \pm 16}{6} \\
+        x &= \dfrac{4}{3} \quad \text{or} \quad x = -4
+    \end{align*}
+
+    \item \textbf{Horizontal Asymptote}:
+    \[y=1\]
+    Since the highest degrees and coefficients of numerator and denominator are equal.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,157 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={5.5in, 9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{College Algebra Worksheet 6.6}
+\author{PCL Learning Center}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Problem Set 1\\Difficulty level: Normal}
+
+\subsection*{Problem 1}
+Which is the solution to \( 5^{5x} = 5^{x+2} \)?  
+\begin{enumerate}[label=(\alph*)]
+    \item \( \dfrac{1}{6} \)
+    \item \( \dfrac{1}{4} \)
+    \item \( \dfrac{1}{2} \)
+    \item \( 2 \)
+    \item \( 4 \)
+\end{enumerate}
+
+\subsection*{Problem 2}
+Determine the value of \( x \) which satisfies the following equation.
+\[ 16^{-2x+2} = 64^{-2x+2} \]
+
+\subsection*{Problem 3}
+Solve \( 5^{x-3} = 7^x \).
+
+\subsection*{Problem 4}
+Which is the solution to \( 7e^{9x} = 20 \), rounded to the nearest tenth?
+
+\begin{enumerate}[label=(\alph*)]
+    \item \( x = -0.6 \)
+    \item \( x = 0.3 \)
+    \item \( x = 0.1 \)
+    \item \( x = -0.2 \)
+    \item \( x = -0.3 \)
+\end{enumerate}
+
+\subsection*{Problem 5}
+Find the value of \( x \) which satisfies the following equation.
+\[\log_3(7x-26)=2\]
+
+\subsection*{Problem 6}
+Solve the following equation for \(x\).
+\[ \log_3(x + 8) + \log_3(x) = 2 \]  
+
+\subsection*{Problem 7}
+Which value makes the equation \( \log[3(x + 1)] = \log[3(2x)] \) true?
+
+\begin{enumerate}[label=(\alph*)]
+    \item \( x = 5 \)
+    \item \( x = 4 \)
+    \item \( x = 3 \)
+    \item \( x = 2 \)
+    \item \( x = 1 \)
+\end{enumerate}
+
+\subsection*{Problem 8}
+A virus takes 8 days to double its original population \((A=2A_0)\). How long will it take to quadruple its population?  
+Round to the nearest tenth.
+
+
+\subsection*{Problem 9}
+Sal invests \$16,000 at age 35. He hopes the investment will be worth \$320,000 when he turns 40.  
+If the interest compounds continuously, approximately what rate of growth will he need to achieve his goal?  
+Round to the nearest tenth of a percent.
+
+
+\subsection*{Problem 10}
+A bacteria population declined from 470,000 to 500 in 24 hours.  
+At this rate of decay, how many bacteria will there be in 18 hours?  
+Round to the nearest whole number.
+
+\section*{Problem Set 2\\Difficulty level: Hard}
+\subsection*{Problem 1}
+For the following exercises, use logarithms to solve.
+\begin{enumerate}[label=(\alph*)]
+    \item \( e^{2x} - e^x - 132 = 0 \)
+    \item \( 7e^{8x+8} - 5 = -95 \)
+    \item \( 10e^{8x+3} + 2 = 8 \)
+    \item \(-8 \cdot 10^{p+7}-7=-24\)
+\end{enumerate}
+
+
+\newpage
+\section*{Solutions to the Set 1}
+
+\subsection*{Problem 1}
+(a) \( \dfrac{1}{2} \)
+
+\subsection*{Problem 2}
+1
+
+\subsection*{Problem 3}
+\(x=\dfrac{3\ln(5)}{\ln(5)-\ln(7)}\)
+
+\subsection*{Problem 4}
+\begin{enumerate}
+    \item[(c)] \(x=0.1\)
+\end{enumerate} 
+
+\subsection*{Problem 5}
+\( x = 5 \)
+
+\subsection*{Problem 6}
+\( x = 1 \)
+
+\subsection*{Problem 7}
+(e) \( x = 1 \)
+
+\subsection*{Problem 8}
+16 days
+
+\subsection*{Problem 9}
+59.9\%
+
+\subsection*{Problem 10}
+2769 bacteria
+
+\section*{Solutions to the Set 2}
+\subsection*{Problem 1}
+\begin{enumerate}[label=(\alph*)]
+    \item $e^{2x} - e^x - 132 = 0$ \\
+          Let $y = e^x$: \\
+          $y^2 - y - 132 = 0$ \\
+          $y = \dfrac{1 \pm \sqrt{1 + 528}}{2} = \dfrac{1 \pm 23}{2}$ \\
+          $y = 12$ \quad (since $y = e^x > 0$) \\
+          $e^x = 12$ \\
+          $x = \ln(12)$
+
+    \item $7e^{8x+8} - 5 = -95$ \\
+          $7e^{8x+8} = -90$ \\
+          There is no real solution, since $e^{8x+8} > 0$
+
+    \item $10e^{8x+3} + 2 = 8$ \\
+          $10e^{8x+3} = 6$ \\
+          $e^{8x+3} = 0.6$ \\
+          $8x + 3 = \ln(0.6)$ \\
+          $x = \dfrac{\ln(0.6) - 3}{8}$
+
+    \item $-8 \cdot 10^{p+7} - 7 = -24$ \\
+          $-8 \cdot 10^{p+7} = -17$ \\
+          $10^{p+7} = \dfrac{17}{8}$ \\
+          $p + 7 = \log_{10}\left(\dfrac{17}{8}\right)$ \\
+          $p = \log_{10}(2.125) - 7$
+\end{enumerate}
+
+\end{document}
